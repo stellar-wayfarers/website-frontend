@@ -19,11 +19,12 @@ class Background extends Component {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
-    const currentImg = this.props.image;
-    const newImg = nextProps.image;
+  componentDidUpdate(prevProps) {
+    /* eslint-disable react/no-did-update-set-state */
+    const newImg = this.props.image;
+    const oldImg = prevProps.image;
 
-    if (currentImg !== newImg) {
+    if (newImg !== oldImg) {
       this.setState({
         backgroundArtWrapperStyle: this.getBackgroundArtWrapperStyle(true),
       });

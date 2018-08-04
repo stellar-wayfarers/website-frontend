@@ -23,6 +23,9 @@ export class DefaultPage extends Component {
     return (
       <div className="landing-default-page">
         <div className="landing-intro-text">
+          <div className="landing-intro-text-first-words">
+            К странникам не присоединяются — ими становятся
+          </div>
           <ReactMarkdown source={About} />
         </div>
       </div>

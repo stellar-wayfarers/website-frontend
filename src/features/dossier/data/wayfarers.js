@@ -3,9 +3,11 @@ import BeliverStory from './stories/believer';
 
 import MadMenFoxStory from './stories/madmenfox';
 import DrFikusStory from './stories/doctor-fikus';
+import PrizrakStory from './stories/prizrak';
 
 export default [
   {
+    id: 'believer',
     name: 'Believer',
     age: 28,
     specs: [
@@ -25,6 +27,7 @@ export default [
     story: BeliverStory,
   },
   {
+    id: 'madmenfox',
     name: 'MadMenFox',
     age: 22,
     specs: [ 'headhunting' ],
@@ -36,6 +39,7 @@ export default [
     story: MadMenFoxStory,
   },
   {
+    id: 'doctor-ficus',
     name: 'Doctor Ficus',
     age: 24,
     specs: [ 'escort', 'headhunting' ],
@@ -44,5 +48,23 @@ export default [
     ships: [ 'Mustang Alpha' ],
     character: 'Спокойный, рассудительный.',
     story: DrFikusStory,
+  },
+  {
+    id: 'prizrak',
+    name: 'Prizrak',
+    age: 24,
+    specs: [
+      'intelligence',
+      'headhunting',
+      'capturing-ships',
+      'shipping-sectors',
+      'capturing-stations',
+      'subversion',
+    ],
+    system: 'Sol',
+    planet: 'Earth',
+    ships: [ 'Mustang Alpha' ],
+    character: 'Уравновешенный. Расчётливый. Проявляет признаки паранойи. Крайне злопамятный.',
+    story: PrizrakStory,
   },
 ];

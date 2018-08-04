@@ -10,6 +10,6 @@ export default {
   name: 'Dossier',
   childRoutes: [
     { path: 'default-page', name: 'Default page', component: Wayfarers, isIndex: true },
-    { path: 'wayfarer/:id', name: 'Wayfarer', component: Wayfarer },
+    { path: ':id', name: 'Wayfarer', component: Wayfarer },
   ],
 };

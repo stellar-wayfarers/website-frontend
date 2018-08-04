@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import random from 'lodash/random';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faIdBadge from '@fortawesome/fontawesome-free-regular/faIdBadge';
+import { Link } from 'react-router-dom';
 
 import ReactMarkdown from 'react-markdown';
 import WayfarerType from './types/wayfarer';
 
 import prefix from '../../functions/imgs-prefix';
 import chislitelnie from '../../functions/chislitelnie';
+import paths from '../../common/paths';
 
 export default class WayfarerCard extends PureComponent {
   static propTypes = {
@@ -34,7 +36,7 @@ export default class WayfarerCard extends PureComponent {
 
   render() {
     const {
-      wayfarer: { name, age, specs, avatar, character },
+      wayfarer: { id, name, age, specs, avatar, character },
       specs: allSpecs,
     } = this.props;
 
@@ -59,9 +61,9 @@ export default class WayfarerCard extends PureComponent {
           />,
         ]}
         <div className="dossier-wayfarer-card__block">
-          <div className="dossier-wayfarer-card__name">
+          <Link to={paths.profile(id)} className="dossier-wayfarer-card__name">
             {name}, {chislitelnie(age, [ 'год', 'года', 'лет' ])}.
-          </div>
+          </Link>
         </div>
         <div className="dossier-wayfarer-card__block dossier-wayfarer-card__character">
           {character}
@@ -69,14 +71,14 @@ export default class WayfarerCard extends PureComponent {
         <div className="dossier-wayfarer-card__block full-width">
           <div className="dossier-wayfarer-card__about">
             <ReactMarkdown source={showFullStory ? storyFull : storyShort} />
-            <div
+            {/* <div
               className="dossier-wayfarer-card__about__toggle-full"
               onClick={this.toggleFullStory}
               role="button"
               tabIndex={0}
             >
               {showFullStory ? 'Свернуть' : 'Подробнее'}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="dossier-wayfarer-card__block column">

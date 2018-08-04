@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 const WayfarerType = PropTypes.shape({
+  id: PropTypes.string,
   name: PropTypes.string,
   age: PropTypes.number,
   specs: PropTypes.arrayOf(PropTypes.string),

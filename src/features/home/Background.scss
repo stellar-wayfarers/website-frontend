@@ -42,6 +42,7 @@ $backgroundOverlayEnd: rgba(0, 0, 0, 0.9);
       background-color: $backgroundOverlayBegin;
       background-size: cover;
       background-position: center top;
+      flex: 1 1 auto;
     }
   }
 }
