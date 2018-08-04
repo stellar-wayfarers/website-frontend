@@ -10,11 +10,16 @@
 .dossier-wayfarer__avatar {
   background-size: cover;
   background-position: center top;
-  float: right;
-  width: 250px;
+  width: 100%;
   height: 250px;
   border-radius: 4px;
-  margin: 0 0 10px 30px;
+  margin: 0 0 10px 0;
+
+  @media (min-width: $mobile) {
+    width: 250px;
+    float: right;
+    margin: 0 0 10px 30px;
+  }
 }
 
 .dossier-wayfarer__story {

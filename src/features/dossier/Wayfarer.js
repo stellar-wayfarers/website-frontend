@@ -44,14 +44,13 @@ export class Wayfarer extends Component {
     const { name, age, character, avatar } = this.props.wayfarer;
     const storyFull = this.props.wayfarer.story.replace('<cut/>', '');
     const avatarStyle = this.getAvatarStyles(avatar);
+    const desc = `${chislitelnie(age, [ 'год', 'года', 'лет' ])}, ${lowerFirst(character)}`;
 
     return (
       <div className="dossier-wayfarer">
         <div className="dossier-wayfarer__avatar" style={avatarStyle} />
         <h1 className="dossier-wayfarer__name">{name}</h1>
-        <div className="dossier-wayfarer__age">
-          {chislitelnie(age, [ 'год', 'года', 'лет' ])}, {lowerFirst(character)}
-        </div>
+        <div className="dossier-wayfarer__desc">{desc}</div>
         <div className="dossier-wayfarer__story">
           <ReactMarkdown source={storyFull} />
         </div>
