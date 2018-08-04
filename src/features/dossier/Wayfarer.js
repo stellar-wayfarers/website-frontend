@@ -48,7 +48,7 @@ export class Wayfarer extends Component {
 
     return (
       <div className="dossier-wayfarer">
-        <div className="dossier-wayfarer__avatar" style={avatarStyle} />
+        {avatar && <div className="dossier-wayfarer__avatar" style={avatarStyle} />}
         <h1 className="dossier-wayfarer__name">{name}</h1>
         <div className="dossier-wayfarer__desc">{desc}</div>
         <div className="dossier-wayfarer__story">
