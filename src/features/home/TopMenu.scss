@@ -7,10 +7,11 @@
   background: rgba(37, 46, 70, 0.5);
 
   display: flex;
+  justify-content: center;
 
   @media (max-width: $mobile) {
     height: auto;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -41,8 +42,8 @@
 
   @media (max-width: $mobile - 1px) {
     height: 30px;
-    border-bottom: none;
     justify-content: center;
+    &,
     &.active,
     &:hover {
       border-bottom: none;
