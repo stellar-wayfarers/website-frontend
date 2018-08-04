@@ -48,8 +48,8 @@ export class Wayfarer extends Component {
 
     return (
       <div className="dossier-wayfarer">
-        {avatar && <div className="dossier-wayfarer__avatar" style={avatarStyle} />}
         <h1 className="dossier-wayfarer__name">{name}</h1>
+        {avatar && <div className="dossier-wayfarer__avatar" style={avatarStyle} />}
         <div className="dossier-wayfarer__desc">{desc}</div>
         <div className="dossier-wayfarer__story">
           <ReactMarkdown source={storyFull} />
