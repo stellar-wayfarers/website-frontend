@@ -1,0 +1,11 @@
+@import '../../styles/mixins';
+
+.common-page-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}

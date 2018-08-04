@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+
+// .landing-default-page {
+// }
+
+.landing-intro-text {
+  font-size: 16px;
+  max-width: 600px;
+  text-align: justify;
+
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: 1px solid #30405b;
+
+  clip-path: inset(0% 0% 100% 0%);
+
+  animation-fill-mode: forwards;
+  animation-name: top-to-bottom-enter;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}

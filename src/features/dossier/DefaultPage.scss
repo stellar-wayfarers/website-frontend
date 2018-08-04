@@ -1,0 +1,14 @@
+@import '../../styles/mixins';
+
+.dossier-wayfarers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: baseline;
+
+  @media (min-width: $mobile) {
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 90px);
+  }
+}

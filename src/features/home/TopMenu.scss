@@ -1,0 +1,48 @@
+@import '../../styles/mixins';
+
+.home-top-menu {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid $borderColor;
+  background: rgba(37, 46, 70, 0.5);
+
+  display: flex;
+
+  @media (max-width: $mobile) {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.home-top-menu__item {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: rgba(45, 183, 245, 0.4);
+
+  &:hover {
+    color: rgba(45, 183, 245, 0.6);
+  }
+
+  &.active {
+    color: rgba(45, 183, 245, 1);
+  }
+
+  @media (min-width: $mobile) {
+    & + & {
+      border-left: 1px solid $borderColor;
+    }
+  }
+
+  @media (max-width: $mobile - 1px) {
+    height: 30px;
+    border-bottom: none;
+    justify-content: center;
+    &.active,
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
