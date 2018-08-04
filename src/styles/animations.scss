@@ -7,3 +7,73 @@
     clip-path: inset(0% 0% 0% 0%);
   }
 }
+
+@mixin topToBottomAnimation() {
+  clip-path: inset(0% 0% 100% 0%);
+
+  animation-fill-mode: forwards;
+  animation-name: top-to-bottom-enter;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes from-center-enter {
+  0% {
+    clip-path: inset(0% 50% 0% 50%);
+  }
+
+  100% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+@mixin fromCenterAnimation() {
+  clip-path: inset(0% 0% 100% 0%);
+
+  animation-fill-mode: forwards;
+  animation-name: from-center-enter;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes from-bottom-enter {
+  0% {
+    clip-path: inset(100% 0% 0% 0%);
+  }
+
+  100% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+@mixin fromBottomAnimation() {
+  clip-path: inset(0% 0% 100% 0%);
+
+  animation-fill-mode: forwards;
+  animation-name: from-bottom-enter;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes opacity-enter-7 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin opacityAnimation7() {
+  opacity: 0;
+
+  animation-fill-mode: forwards;
+  animation-name: opacity-enter-7;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}

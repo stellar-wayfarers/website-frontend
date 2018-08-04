@@ -10,5 +10,9 @@
     flex-direction: column;
     width: 100%;
     height: calc(100vh - 90px);
+    max-height: 800px;
+
+    align-items: center;
+    align-content: center;
   }
 }

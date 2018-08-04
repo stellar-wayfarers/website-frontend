@@ -1,5 +1,7 @@
 @import './mixins';
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic');
+
 * {
   box-sizing: border-box;
 }
@@ -15,8 +17,10 @@ body,
 td {
   // color: #d4e7ff;
   color: #a2b6d0;
-  font-family: pt-sans-caption, fira-sans, roboto, Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  // font-weight: 300;
+  font-family: 'Open Sans Condensed', pt-sans-caption, fira-sans, roboto, Arial, 'Helvetica Neue',
+    Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   letter-spacing: 0.2px;
   line-height: 1.5;
 }

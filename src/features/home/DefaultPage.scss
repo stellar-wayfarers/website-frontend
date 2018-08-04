@@ -1,22 +1,43 @@
 @import '../../styles/mixins';
 
-// .landing-default-page {
-// }
+.landing-default-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  position: relative;
+  // @media (min-width: $mobile) {
+  //   margin-top: 80px;
+  // }
+}
 
 .landing-intro-text {
-  font-size: 16px;
-  max-width: 600px;
-  text-align: justify;
+  font-size: 20px;
+  text-align: center;
+  // text-align: justify;
+  // font-style: italic;
+  font-weight: normal;
 
-  background: rgba(0, 0, 0, 0.1);
   padding: 10px;
-  border: 1px solid #30405b;
+  // background: rgba(0, 0, 0, 0.1);
+  // border: 1px solid #30405b;
 
-  clip-path: inset(0% 0% 100% 0%);
+  // @include topToBottomAnimation();
+  // @include fromCenterAnimation();
+  // @include fromBottomAnimation();
+  @include opacityAnimation7();
 
-  animation-fill-mode: forwards;
-  animation-name: top-to-bottom-enter;
-  animation-delay: 0.5s;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
+  @media (min-width: 1001px) {
+    max-width: calc(100% - 300px);
+    position: absolute;
+    bottom: 50px;
+  }
+
+  @media (max-width: 1000px) {
+    max-width: calc(100% - 50px);
+  }
+
+  // @media (min-width: $mobile) {
+  //   transform: translateY(-150px);
+  // }
 }
