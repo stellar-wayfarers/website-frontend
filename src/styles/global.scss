@@ -1,6 +1,7 @@
 @import './mixins';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 * {
   box-sizing: border-box;
@@ -13,20 +14,22 @@ body,
   margin: 0;
 }
 
-body,
-td {
+body {
   // color: #d4e7ff;
-  color: #a2b6d0;
-  font-family: 'Open Sans Condensed', pt-sans-caption, fira-sans, roboto, Arial, 'Helvetica Neue',
-    Helvetica, sans-serif;
+  // color: #a2b6d0;
+  color: #5db795;
+  font-family: 'Oswald', pt-sans-caption, fira-sans, roboto, Arial, 'Helvetica Neue', Helvetica,
+    sans-serif;
   font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.2px;
+  // font-weight: bold;
+  // letter-spacing: 0.2px;
   line-height: 1.5;
 }
 
 a {
-  color: #2db7f5;
+  // color: #2db7f5;
+  // color: #d5e6e0;
+  color: white;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.3s, color 0.3s;
